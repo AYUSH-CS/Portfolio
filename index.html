@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="icon.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(3, 3, 37);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 120px;
+            background-color: rgb(19, 15, 49);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(160, 160, 235);
+        }
+
+        nav img {
+            width: 200px;
+            height: auto;
+        }
+
+        /* ---------------------------------------- */
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 160px 0;
+            align-self: center;
+        }
+
+        .firstsectiondiv {
+            width: 30%;
+        }
+
+        .leftsection {
+            padding-top: 30px;
+            font-size: 3rem;
+            margin: 40px 0;
+        }
+
+        .rightsection img {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .purple {
+            color: rgb(169, 107, 227);
+        }
+
+        #element {
+            color: rgb(169, 107, 227);
+        }
+
+        .secondsection {
+            max-width: 70vw;
+            margin: auto;
+            padding-left: 50px;
+        }
+
+        #visitCount {
+            color: rgb(54, 54, 100);
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        footer {
+            background-color: lavender;
+            height: 200px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 30px;
+            align-items: center;
+        }
+
+        .footer-first a {
+            color: rgb(54, 54, 100);
+            font-size: 24px;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .footer-first a:hover {
+            color: rgb(160, 160, 235);
+        }
+
+        .footer-third {
+            text-align: center;
+            padding-right: 80px;
+        }
+
+        .footer-third {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        #clock {
+            font-size: 20px;
+            color: rgb(54, 54, 100);
+            margin-top: 5px;
+        }
+
+        #visitCount {
+            color: rgb(54, 54, 100);
+            text-align: center;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+
+
+
+        #clock {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 10px;
+            color: rgb(54, 54, 100);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="logo2.png" alt="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Ayush</span>
+                <div> I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="main1.png" alt="main">
+            </div>
+        </section>
+
+        <section class="secondsection">
+            <!-- Content section -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <!-- Add links with symbols for social media -->
+                <a href="https://github.com" target="https://github.com/AYUSH-CS"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="https://twitter.com/Ayush63655449"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="https://www.linkedin.com/in/ayushmaheshwari-02a9a3242/"><i class="fab fa-telegram"></i></a>
+            </div>
+            <div class="footer-second"></div>
+            <div class="footer-third">
+                <h1 style="color: rgb(54, 54, 100);">Current Time</h1>
+                <div id="clock"></div>
+            </div>
+            <div class="footer-fourth">
+                <p id="visitCount"></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web designer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        // Get the visit count from local storage or set it to 0 if not available
+        let visitCount = localStorage.getItem("visitCount") || 0;
+
+        // Increment the visit count
+        visitCount++;
+        localStorage.setItem("visitCount", visitCount);
+
+        // Update the visit count element
+        document.getElementById("visitCount").textContent ="Page Visit: "+ visitCount.toString();
+        
+    </script>
+    <script>
+        function updateTime() {
+            var clock = document.getElementById('clock');
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var seconds = now.getSeconds().toString().padStart(2, '0');
+            var timeString = hours + ':' + minutes + ':' + seconds;
+            clock.textContent = timeString;
+        }
+
+        // Update the time every second
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+
+</html>
